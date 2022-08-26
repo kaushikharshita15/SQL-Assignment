@@ -1,0 +1,23 @@
+CREATE DATABASE EmployeeDB
+
+use EmployeeDB
+  
+  CREATE TABLE dept
+(
+    deptno int primary key,
+    dname varchar(20),
+    loc varchar(20)
+)
+
+create table EMP
+(
+   empno int (4),
+   ename varchar(20),
+   job varchar(20),
+   mgr-id int(4),
+    hiredate DATE,
+    sal int(7),
+    comm smallint(4),
+    deptno int references emp(dept)
+)
+
