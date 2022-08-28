@@ -70,7 +70,14 @@ SELECT COUNT(*),
 FROM emp
 GROUP BY job;
 
-
-
-
+--7. List the employees with the lowest and highest salary.
+SELECT * FROM emp
+WHERE
+	sal = (SELECT MIN(sal)FROM emp) or 
+	sal = (SELECT Max(sal )FROM emp);
+    
+--8. List full details of departments that don't have any employees.
+SELECT * FROM dept
+WHERE deptno
+NOT IN (select deptno FROM emp);
 
