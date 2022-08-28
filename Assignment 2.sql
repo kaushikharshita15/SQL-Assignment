@@ -59,4 +59,18 @@ UPDATE emp
 SET sal = sal + (sal * 10/100);
 SELECT* FROM emp
 
+--5. Find the number of CLERKS employed. Give it a descriptive heading.
+SELECT COUNT(*) FROM emp
+WHERE job LIKE 'CLERK%'
+
+--6. Find the average salary for each job type and the number of people employed in each job. 
+SELECT COUNT(*),
+       avg(sal),
+       job
+FROM emp
+GROUP BY job;
+
+
+
+
 
