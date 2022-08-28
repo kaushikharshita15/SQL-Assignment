@@ -43,7 +43,20 @@ values
 ('7934','MILLER','CLERK','7782','23-JAN-82','1300',null,'10');
 
 -- 1. List all employees whose name begins with 'A'
-Select ename from EMP
-Where ename LIKE 'A%';
+SELECT ename FROM EMP
+WHERE ename LIKE 'A%';
+
+--2. Select all those employees who don't have a manager
+SELECT * FROM emp
+WHERE mgr_id IS NULL;
+
+--3.List employee name, number and salary for those employees who earn in the range 1200 to 1400.
+SELECT ename,empno,sal FROM emp
+WHERE sal BETWEEN (select 1000) AND 1400;
+
+--4.Give all the employees in the RESEARCH department a 10% pay rise. Verify that this has been done by listing all their details before and after the rise.
+UPDATE emp
+SET sal = sal + (sal * 10/100);
+SELECT* FROM emp
 
 
