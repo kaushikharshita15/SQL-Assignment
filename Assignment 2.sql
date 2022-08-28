@@ -21,7 +21,6 @@ create table EMP
 insert into dept(deptno,dname,loc)
 values 
 ('10','Accounting','New York'),
-('10','Accounting','New York'),
 ('20','Research','Dallas'),
 ('30','Sales','Chicago'),
 ('40','Operations','Boston');
