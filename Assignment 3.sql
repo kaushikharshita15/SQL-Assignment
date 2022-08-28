@@ -42,3 +42,15 @@ values
 ('7902','FORD','ANALYST','7566','03-DEC-81','3000',null,'20'),
 ('7934','MILLER','CLERK','7782','23-JAN-82','1300',null,'10');
 
+--1. Retrieve a list of MANAGERS.
+SELECT *FROM emp
+WHERE job = 'MANAGER'
+
+--2. Find out the names and salaries of all employees earning more than 1000 per month.
+SELECT ename, sal FROM emp
+WHERE sal > 1000
+ORDER BY sal;
+
+--3. Display the names and salaries of all employees except JAMES.
+SELECT ename, sal FROM emp 
+WHERE ename NOT LIKE 'JAMES%';
