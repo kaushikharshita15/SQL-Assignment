@@ -13,7 +13,7 @@ CREATE TABLE DEPARTMENTS
  DEPTNO INT PRIMARY KEY,
  DNAME VARCHAR(15) NOT NULL,
  LOC VARCHAR(20)
-);
+); 
 
 CREATE TABLE EMPLOYEES
 (
@@ -47,6 +47,8 @@ STATUS VARCHAR(15) NOT NULL
 INSERT INTO CLIENTS
 (CLIENT_ID,CNAME,ADDRESS,EMAIL,PHONE,BUSINESS)
 VALUES
-(1001,'ACME
-Utilities','Noida','contact@acmeutil.com',9567880032,'Man
-ufacturing'),
+(1001,'ACME Utilities','Noida','contact@acmeutil.com',9567880032,'Manufacturing'),
+(1002,'Trackon Consultants','Mumbai','consult@trackon.com',8734210090,'Consultant'),
+(1003,'MoneySaver Distributors','Bangalore','save@moneysaver.com',7799886655,'Reseller'),
+(1004,'Lawful Corp','Chennai','justice@lawful.com',9210342219,'Professional');
+
