@@ -42,3 +42,9 @@ values
 ('7900','JAMES','CLERK','7698','03-DEC-81','950','null','30'),
 ('7902','FORD','ANALYST','7566','03-DEC-81','3000','null','20'),
 ('7934','MILLER','CLERK','7782','23-JAN-82','1300','null','10');
+
+-- 1. List all employees whose name begins with 'A'
+Select ename from EMP
+Where ename LIKE 'A%';
+
+
