@@ -14,7 +14,7 @@ create table EMP
    hiredate DATE,
    sal int,
    comm smallint,
-   deptno int references emp(deptno)
+   deptno int references dept(deptno)
 )
 
 
