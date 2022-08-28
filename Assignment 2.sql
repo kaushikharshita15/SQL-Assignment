@@ -81,3 +81,15 @@ SELECT * FROM dept
 WHERE deptno
 NOT IN (select deptno FROM emp);
 
+--9. Get the names and salaries of all the analysts earning more than 1200 who are based in department 20. Sort the answer by ascending order of name. 
+SELECT ename,sal
+FROM emp
+WHERE sal > 1200
+ORDER BY emp.ename ASC;
+
+--10. For each department, list its name and number together with the total salary paid to employees in that department.
+SELECT dname FROM dept
+FULL OUTER JOIN emp ON dept.deptno = dept.deptno
+WHERE sal>100
+GROUP BY dname
+HAVING SUM(sal)
