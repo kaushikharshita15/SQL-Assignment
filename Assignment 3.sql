@@ -62,3 +62,11 @@ WHERE ename LIKE 'S%';
 --5. Find out the names of all employees that have ‘A’ anywhere in their name. 
 SELECT ename FROM emp
 WHERE ename LIKE '%A%';
+
+--6. Find out the names of all employees that have ‘L’ as their third character in their name.
+SELECT ename FROM emp
+WHERE ename LIKE '__l%';
+
+--7. Compute daily salary of JONES. 
+SELECT ename, (sal/30) FROM emp
+WHERE ename LIKE 'JONES%';
