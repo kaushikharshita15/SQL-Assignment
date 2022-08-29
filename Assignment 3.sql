@@ -70,3 +70,7 @@ WHERE ename LIKE '__l%';
 --7. Compute daily salary of JONES. 
 SELECT ename, (sal/30) FROM emp
 WHERE ename LIKE 'JONES%';
+
+--8. Calculate the total monthly salary of all employees. 
+SELECT SUM(sal) FROM emp
+
