@@ -44,7 +44,7 @@ values
 
 --1. Retrieve a list of MANAGERS.
 SELECT *FROM emp
-WHERE job = 'MANAGER'
+WHERE job = 'MANAGER';
 
 --2. Find out the names and salaries of all employees earning more than 1000 per month.
 SELECT ename, sal FROM emp
@@ -54,3 +54,11 @@ ORDER BY sal;
 --3. Display the names and salaries of all employees except JAMES.
 SELECT ename, sal FROM emp 
 WHERE ename NOT LIKE 'JAMES%';
+
+--4. Find out the details of employees whose names begin with ‘S’.
+SELECT * FROM emp 
+WHERE ename LIKE 'S%';
+
+--5. Find out the names of all employees that have ‘A’ anywhere in their name. 
+SELECT ename FROM emp
+WHERE ename LIKE '%A%';
